@@ -10,7 +10,7 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <a class="nav-link" routerLink="/home" routerLinkActive="active" href="/home">Home
+          <a class="nav-link" href="/home">Home
             <span class="sr-only">(current)</span>
           </a>
         </li>
@@ -20,11 +20,8 @@
         <li class="nav-item">
           <a class="nav-link" routerLink="/products" href="#">Product</a>
         </li>
-         <li class="nav-item">
-          <a class="nav-link" routerLink="/add-product" href="#">Add Product</a>
-        </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/contact" href="#">Contact</a>
+          <a class="nav-link" href="#">Contact</a>
         </li>
       </ul>
     </div>
@@ -38,17 +35,17 @@
 
     <div class="col-lg-3">
 
-      <!-- <app-category></app-category> -->
+      <app-category></app-category>
     </div>
     <!-- <app-category></app-category> -->
     <!-- /.col-lg-3 -->
  
     <div class="col-lg-9">
       <router-outlet></router-outlet>
-      <!-- <app-slide></app-slide>
-      <app-product-add></app-product-add>
+      <app-slide></app-slide>
+      <!-- <app-product-add></app-product-add> -->
       <br>
-      <app-product-list></app-product-list> -->
+      <app-product-list></app-product-list>
 
 
       <!-- /.row -->
@@ -62,13 +59,13 @@
 </div>
 <!-- /.container -->
 
-<!-- Footer -->
-<footer class="py-5 bg-dark">
+
+<!-- <footer class="py-5 bg-dark">
   <div class="container">
     <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
   </div>
-
-</footer>
+  
+</footer> -->
 
 
 

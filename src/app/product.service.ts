@@ -17,4 +17,7 @@ export class ProductService {
     this.products.push(newProduct);
     console.log(this.products)
   }
+   editProduct(){ // sua san pham
+
+  }
 }

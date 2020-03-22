@@ -43,39 +43,7 @@ export const data: Product[] = [
       },
        {
         id: 6,
-        name: "Hàng 6",
-        price: 24.99,
-        desc: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
-        status: false,
-        img: 'https://dummyimage.com/275x175/000/fff?fbclid=IwAR3bO5qngYKlzkgox65Ui-HdgJTCFMZkZaemLSMoUHKsg8MeDcaGAPBzWd4'
-      },  {
-        id: 7,
-        name: "Sản phẩm 7",
-        price: 24.99,
-        desc: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
-        status: false,
-        img: 'https://dummyimage.com/275x175/000/fff?fbclid=IwAR3bO5qngYKlzkgox65Ui-HdgJTCFMZkZaemLSMoUHKsg8MeDcaGAPBzWd4'
-      }
-      ,  {
-        id: 8,
-        name: "Sản phẩm 8",
-        price: 24.99,
-        desc: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
-        status: false,
-        img: 'https://dummyimage.com/275x175/000/fff?fbclid=IwAR3bO5qngYKlzkgox65Ui-HdgJTCFMZkZaemLSMoUHKsg8MeDcaGAPBzWd4'
-      }
-      ,  {
-        id: 9,
-        name: "Sản phẩm 9",
-        price: 24.99,
-        desc: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
-        status: true,
-        img: 'https://dummyimage.com/275x175/000/fff?fbclid=IwAR3bO5qngYKlzkgox65Ui-HdgJTCFMZkZaemLSMoUHKsg8MeDcaGAPBzWd4'
-      },
-       
-         {
-        id: 10,
-        name: "Sản phẩm 10",
+        name: "San Pham 6",
         price: 24.99,
         desc: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
         status: false,

@@ -8,9 +8,9 @@ import { Product } from '../Product';
   styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent implements OnInit {
-  selected: Product;
+  
   products: Product[];
-
+  selected: Product;
   constructor(
     private productService: ProductService
   ) { 
@@ -25,7 +25,8 @@ export class ProductListComponent implements OnInit {
     this.products = this.productService.getProducts();
   }
   removeItem(id){
-    this.products = this.productService.removeProduct(id);
+    this.products = this.products.filter(product => product.id != id)
+    // this.products = this.productService.removeProduct(id);
     // this.products = this.products.filter(product => product.id != id);
   }
 
