@@ -6,6 +6,7 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { HomeComponent } from './home/home.component';
+import { ProductManagerComponent } from './product-manager/product-manager.component';
 
 
 const routes: Routes = [
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent},
   { path: 'products', component: ProductListComponent},
   { path: 'contact', component: ContactComponent},
+   { path: 'manager', component: ProductManagerComponent},
   { path: '**', component: NotFoundComponent},
 ];
 
