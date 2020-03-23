@@ -1,3 +1,8 @@
-<p>
-{{product.name}}
+
+<p *ngIf="product" >
+  ProductDetail <br>
+ Chi tiết {{product.name}} <br>
+ Giá :{{product.price}} <br>
+ Mô tả : {{product.desc}} <br>
+Trạng thái : {{product.status}} <br>
 </p>
