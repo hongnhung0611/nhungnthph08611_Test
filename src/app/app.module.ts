@@ -17,6 +17,7 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
 import { ProductManagerComponent } from './product-manager/product-manager.component';
 import { AboutComponent } from './about/about.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { ProductEditComponent } from './product-edit/product-edit.component';
 
 
 @NgModule({
@@ -33,6 +34,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
     ProductManagerComponent,
     AboutComponent,
     NotFoundComponent,
+    ProductEditComponent,
     
   ],
   imports: [

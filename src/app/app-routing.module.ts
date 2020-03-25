@@ -8,6 +8,7 @@ import { NotFoundComponent } from "./not-found/not-found.component";
 import { HomeComponent } from "./home/home.component";
 import { ProductManagerComponent } from "./product-manager/product-manager.component";
 import { ProductDetailComponent } from "./product-detail/product-detail.component";
+import { ProductEditComponent } from "./product-edit/product-edit.component";
 
 const routes: Routes = [
   { path: "", redirectTo: "/home", pathMatch: "full" },
@@ -18,6 +19,9 @@ const routes: Routes = [
   { path: "contact", component: ContactComponent },
   { path: "manager", component: ProductManagerComponent },
   { path: "product/:productId", component: ProductDetailComponent },
+  { path: 'product/edit/:productId' , component: ProductEditComponent},
+  { path: 'product/add' , component: ProductAddComponent},
+
 
   { path: "**", component: NotFoundComponent }
 ];

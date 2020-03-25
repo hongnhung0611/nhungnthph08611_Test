@@ -22,6 +22,9 @@ export class ProductService {
     // return this.products.find(product => product.id == id);
     return this.http.get<Product>(`${this.api}/${id}`);
   }
+  updateProduct(product): Observable<Product>{
+return this.http.put<Product>(`${this.api}/${product.id}` , product);
+  }
 
 
 
