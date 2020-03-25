@@ -21,6 +21,9 @@ export class ProductListComponent implements OnInit {
   ngOnInit(){
     this.getProducts();
   }
+    showDetail(product){ 
+    this.selected = product;
+  }
  
   getProducts(){
     this.productService.getProducts().subscribe(data => {
@@ -45,9 +48,10 @@ export class ProductListComponent implements OnInit {
   // removeItem(id){
   //   this.products = this.products.filter(product => product.id != id);
   // }
-  showDetail(product){
-    // console.log(product);
-    this.selected = product;
-    // console.log(product);
-  }
+
+  // showDetail(product){
+   
+  //   this.selected = product;
+    
+  // }
 }
