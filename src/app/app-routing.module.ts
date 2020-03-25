@@ -14,10 +14,11 @@ const routes: Routes = [
   { path: "home", component: HomeComponent },
   { path: "add-product", component: ProductAddComponent },
   { path: "about", component: AboutComponent },
-  { path: "products", component: ProductListComponent },
+  { path: "product", component: ProductListComponent },
   { path: "contact", component: ContactComponent },
   { path: "manager", component: ProductManagerComponent },
-  { path: "product/:id", component: ProductDetailComponent },
+  { path: "product/:productId", component: ProductDetailComponent },
+
   { path: "**", component: NotFoundComponent }
 ];
 

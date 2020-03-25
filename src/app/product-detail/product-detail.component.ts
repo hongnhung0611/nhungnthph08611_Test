@@ -16,11 +16,20 @@ product: Product;
   ) { }
 
   ngOnInit() {
+this.getProduct();
+    // this.route.params.subscribe(param => {
+    // this.product =this.productService.getProduct(param.id);
+    // })
+  }
+  getProduct(){
+this.route.params.subscribe(param => {
+  console.log(param);
 
-    this.route.params.subscribe(param => {
-      // console.log(param);
-          this.product =this.productService.getProduct(param.id);
-    })
+  this.productService.getProduct(param.productId).subscribe(data => {
+console.log(data);
+this.product = data;
+  })
+});
   }
 
 }

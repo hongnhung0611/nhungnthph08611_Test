@@ -1,28 +1,32 @@
 import { Component, OnInit } from '@angular/core';
+import { Product } from '../Product';
 import { ProductService } from '../product.service';
 
-import { Product } from '../Product';
+
 @Component({
   selector: 'app-product-list',
   templateUrl: './product-list.component.html',
   styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent implements OnInit {
-  
-  products: Product[];
   selected: Product;
+  products: Product[];
+  
   constructor(
     private productService: ProductService
   ) { 
     console.log('constructor')
   }
 
-  ngOnInit(): void {
+  ngOnInit(){
     this.getProducts();
   }
  
   getProducts(){
-    this.products = this.productService.getProducts();
+    this.productService.getProducts().subscribe(data => {
+      this.products = data;
+    })
+    // this.products = this.productService.getProducts();
   }
   removeItem(id){
     this.products = this.products.filter(product => product.id != id)
@@ -44,6 +48,6 @@ export class ProductListComponent implements OnInit {
   showDetail(product){
     // console.log(product);
     this.selected = product;
-    console.log(product);
+    // console.log(product);
   }
 }
