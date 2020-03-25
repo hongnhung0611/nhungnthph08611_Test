@@ -6,8 +6,11 @@ import { Observable } from "rxjs";
 @Injectable()
 export class ProductService {
   // products = data;
-  api = "https://5e79b4b817314d00161333da.mockapi.io/product";
-  // api : 'https://5e7a380817314d0016133ec3.mockapi.io/products';
+  // api = "https://5e79b4b817314d00161333da.mockapi.io/product";
+  // api = 'https://5e7a380817314d0016133ec3.mockapi.io/products';
+    api = 'https://5e7a380817314d0016133ec3.mockapi.io/products';
+
+  // api = "https://5e79aefa17314d0016133349.mockapi.io/products?fbclid=IwAR1GJI89Wy5WEQb0X7SjWYSrMbSY4b8hzzyu-UzGOYsuewtO_qgsk71jpuc";
   constructor(private http: HttpClient) {}
 
   getProducts(): Observable<Product[]> {

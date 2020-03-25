@@ -33,8 +33,7 @@ export class ProductListComponent implements OnInit {
   }
   removeItem(id){
     this.products = this.products.filter(product => product.id != id)
-    // this.products = this.productService.removeProduct(id);
-    // this.products = this.products.filter(product => product.id != id);
+
   }
 
 
@@ -45,13 +44,5 @@ export class ProductListComponent implements OnInit {
   changeName(e){
     // this.product.name = e.target.value;
   }
-  // removeItem(id){
-  //   this.products = this.products.filter(product => product.id != id);
-  // }
-
-  // showDetail(product){
-   
-  //   this.selected = product;
-    
-  // }
+ 
 }

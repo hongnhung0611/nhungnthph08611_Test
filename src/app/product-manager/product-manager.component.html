@@ -67,17 +67,18 @@
 		<tbody>
 			<tr *ngFor="let product of products">
 				<th scope="row">{{product.id}}</th>
-				<td><img src="{{product.image}}" alt="" width="160px" height="160px"></td>
+				<td><img src="{{product.img}}" alt="" width="160px" height="160px"></td>
 				<td> <a routerLink="/product/{{product.id}}" class="text-reset">{{product.name}}</a></td>
-				<td>{{product.description}}</td>
+				<td>{{product.desc}}</td>
 				<!-- <td>{{product.priceSale}}</td> -->
-				<td>{{product.priceRegular}}</td>
-				<td>{{product.status==true?"Còn Hàng":"Hết Hàng"}}</td>
-				<td> <button type="button" class="btn btn-danger"  (click)="remoteItem(product.id)">Delete</button>
-					&nbsp;
-					<button type="button" class="btn btn-success" routerLink="/product/{{product.id}}">Detail</button>
+				<td>{{product.price}}</td>
+				<td>{{product.status==true?"Hết hàng":"Còn hàng"}}</td>
+				<td> <button id="b1" type="button" class="btn btn-danger"  (click)="remoteItem(product.id)">Delete</button>
+					 &nbsp;
+					<button id="b2" type="button" class="btn btn-success" routerLink="/product/{{product.id}}">Detail</button>
           &nbsp;
-          <button class="btn btn-primary" routerLink = '/product/edit/{{product.id}}'>Edit</button>
+          <button id="b3" class="btn btn-primary" routerLink = '/product/edit/{{product.id}}'>Edit</button>
+          &nbsp;
 				</td>
 				
 				
