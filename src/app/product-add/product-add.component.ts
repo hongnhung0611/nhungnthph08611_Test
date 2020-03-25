@@ -20,7 +20,7 @@ export class ProductAddComponent implements OnInit {
   addProduct(){
     // console.log('Component' + this.product);
     this.productService.addProduct(this.product).subscribe(data => 
-       this.router.navigateByUrl('/product'));
+       this.router.navigateByUrl('/manager'));
     
   }
 }

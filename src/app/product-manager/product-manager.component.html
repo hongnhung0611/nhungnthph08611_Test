@@ -39,6 +39,10 @@
 		</tr>
 	</tbody>
 </table> -->
+
+
+
+
 <div class="container">
 	<div class="jumbotron">
 		<app-product-add></app-product-add>
@@ -55,7 +59,7 @@
 				<th scope="col">Product Name</th>
 				<th scope="col">Description</th>
 				<th scope="col">Price Regular</th>
-				<th scope="col">Price Sale</th>
+				<!-- <th scope="col">Price Sale</th> -->
 				<th scope="col">Status</th>
 				<th scope="col">Action</th>
 			</tr>
@@ -66,7 +70,7 @@
 				<td><img src="{{product.image}}" alt="" width="160px" height="160px"></td>
 				<td> <a routerLink="/product/{{product.id}}" class="text-reset">{{product.name}}</a></td>
 				<td>{{product.description}}</td>
-				<td>{{product.priceSale}}</td>
+				<!-- <td>{{product.priceSale}}</td> -->
 				<td>{{product.priceRegular}}</td>
 				<td>{{product.status==true?"Còn Hàng":"Hết Hàng"}}</td>
 				<td> <button type="button" class="btn btn-danger"  (click)="remoteItem(product.id)">Delete</button>
