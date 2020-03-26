@@ -37,7 +37,7 @@ import { ProductIntroduceComponent } from './product-introduce/product-introduce
     AboutComponent,
     NotFoundComponent,
     ProductEditComponent,
-    ProductIntroduceComponent,
+    // ProductIntroduceComponent,
     // ProductDeleteComponent,
     
   ],
