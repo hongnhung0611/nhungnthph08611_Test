@@ -32,8 +32,9 @@ export class ProductService {
     // console.log(this.products);
   }
 
-  removeProduct(id) {
-    return this.products.filter(product => product.id != id);
+  removeProduct(id): Observable<Product> {
+    return this.http.delete<Product>(`${this.api}/${id}`);
+    // return this.products.filter(product => product.id != id);
   }
 
   editProduct() {

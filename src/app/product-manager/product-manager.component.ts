@@ -52,12 +52,18 @@ export class ProductManagerComponent implements OnInit {
     });
   }
 
+removeItem(id){
+    // this.products = this.products.filter(product => product.id != id)
+    this.productService.removeProduct(id).subscribe(response => {
+      console.log(response);
+      this.products = this.products.filter(product => product.id != response.id)
+    })
 
-  removeItem(id){
-    this.products = this.products.filter(product => product.id != id)
-    // this.products = this.productService.removeProduct(id);
-    // this.products = this.products.filter(product => product.id != id);
   }
+  // removeItem(id){
+  //   this.products = this.products.filter(product => product.id != id)
+  
+  // }
   //  deleteItem(product) {
   //   this.productService.deleteProduct(product).subscribe(data => {
   //       return this.products = this.products.filter(item => item.id !== data.id)

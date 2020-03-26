@@ -72,8 +72,9 @@
 				<td>{{product.desc}}</td>
 				<!-- <td>{{product.priceSale}}</td> -->
 				<td>{{product.price}}</td>
-				<td>{{product.status==true?"Hết hàng":"Còn hàng"}}</td>
-				<td> <button id="b1" type="button" class="btn btn-danger"  (click)="remoteItem(product.id)">Delete</button>
+				<!-- <td>{{product.status==true?"Hết hàng":"Còn hàng"}}</td> -->
+        <td >{{product.status ? 'In stock': 'Out stock'}}</td>
+				<td> <button id="b1" type="button" class="btn btn-danger"  (click)="removeItem(product.id)">Delete</button>
 					 &nbsp;
 					<button id="b2" type="button" class="btn btn-success" routerLink="/product/{{product.id}}">Detail</button>
           &nbsp;
