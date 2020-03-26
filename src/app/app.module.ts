@@ -18,8 +18,7 @@ import { ProductManagerComponent } from './product-manager/product-manager.compo
 import { AboutComponent } from './about/about.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ProductEditComponent } from './product-edit/product-edit.component';
-import { ProductIntroduceComponent } from './product-introduce/product-introduce.component';
-// import { ProductDeleteComponent } from './product-delete/product-delete.component';
+
 
 
 @NgModule({
@@ -37,8 +36,7 @@ import { ProductIntroduceComponent } from './product-introduce/product-introduce
     AboutComponent,
     NotFoundComponent,
     ProductEditComponent,
-    // ProductIntroduceComponent,
-    // ProductDeleteComponent,
+
     
   ],
   imports: [
