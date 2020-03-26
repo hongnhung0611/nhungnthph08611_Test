@@ -18,9 +18,9 @@ export class ProductAddComponent implements OnInit {
   ngOnInit() {
   }
   addProduct(){
-    // console.log('Component' + this.product);
+    console.log('Component' + this.product);
     this.productService.addProduct(this.product).subscribe(data => 
-       this.router.navigateByUrl('/manager'));
+       this.router.navigateByUrl('/product'));
     
   }
 }
