@@ -1,5 +1,8 @@
 import {Component, OnInit, Input} from '@angular/core';
 
+import {Product} from '../product';
+import { data } from "../MockData";
+
 
 @Component({
   selector: 'app-home',
@@ -7,7 +10,8 @@ import {Component, OnInit, Input} from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
+product: Product;
+selected: Product;
   constructor() { }
 
   ngOnInit() {
