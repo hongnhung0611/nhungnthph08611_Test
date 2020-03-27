@@ -33,12 +33,15 @@ background-color: rgb(230, 102, 123)
 }
 h3{
   padding-top: 10px;
-  color: rgb(247, 140, 176);
+  color: rgb(238, 168, 191);
 }
 #c1{
   margin-bottom: 100px
 }
 #a :hover{
   color: pink;
+}
+#anh{
+  background-color: rgb(255, 255, 255)
 }
 
