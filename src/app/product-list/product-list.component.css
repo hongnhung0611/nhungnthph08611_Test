@@ -35,6 +35,9 @@ h3{
   color: rgb(247, 140, 176);
 }
 #c1{
-  scroll-margin-bottom: 30px
+  margin-bottom: 100px
+}
+#a :hover{
+  color: pink;
 }
 

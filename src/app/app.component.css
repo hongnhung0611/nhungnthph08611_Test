@@ -13,5 +13,20 @@ p {
 nav {
   background: rgb(238, 155, 155)
 }
+#b1 button {
+  margin-left: 30px;
+  margin-top: 15px;
+  width: 100px;
+  height: 40px;
+  background-color: rgb(131, 161, 226);
+  border-radius: 10px;
+}
+input{
+margin-left: 140px;
+margin-top : 15px;
+height: 40px;
+width: 800px;
+border-radius: 30px;
+}
 
 /*nhunghog */
