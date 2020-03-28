@@ -8,6 +8,9 @@ div {
 div{
   /* margin-bottom: 15px */
 }
+#sp1{
+  background-color: rgb(233, 61, 61);
+}
 #td{
   font-style: tahoma;
   font-size: 32px;

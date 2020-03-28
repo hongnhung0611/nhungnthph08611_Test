@@ -9,11 +9,12 @@
 	<br>
 	<td><img src="{{product.img}}" alt="" width="160px" height="160px"></td>
   <hr>
-		<button id="b1" type="button" class="btn btn-danger"  (click)="removeItem(product.id)">Delete</button>
-		&nbsp;
+		
 		
 		&nbsp;
 		<button id="b3" class="btn btn-primary" routerLink = '/product/edit/{{product.id}}'>Edit</button>
+		&nbsp;
+    <button id="b1" type="button" class="btn btn-danger"  (click)="removeItem(product.id)">Delete</button>
 		&nbsp;
 		<table class="table">
 
