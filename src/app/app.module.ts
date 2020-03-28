@@ -23,6 +23,7 @@ import { ProductIntroduceComponent } from './product-introduce/product-introduce
 import { ProductFastComponent } from './product-fast/product-fast.component';
 import { AbouttComponent } from './aboutt/aboutt.component';
 import { CategoryyComponent } from './categoryy/categoryy.component';
+import { DanhsachComponent } from './danhsach/danhsach.component';
 
 // import { ProductNewComponent } from './product-new/product-new.component';
 
@@ -47,7 +48,8 @@ import { CategoryyComponent } from './categoryy/categoryy.component';
     ProductIntroduceComponent,
     ProductFastComponent,
     AbouttComponent,
-    CategoryyComponent
+    CategoryyComponent,
+    DanhsachComponent
     // ProductNewComponent,
 
     
