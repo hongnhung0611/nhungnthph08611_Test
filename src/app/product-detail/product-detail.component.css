@@ -3,10 +3,14 @@
 }
 .d1{
   font-size: 30px;
-  color: navy
+  color: rgb(89, 132, 197)
 }
 table{
   margin-bottom: 400px;
   margin-top: 70px;
   margin-left: 20px;
+}
+img{
+  height: 300px;
+  width: 270px;
 }

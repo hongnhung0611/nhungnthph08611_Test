@@ -1,37 +1,46 @@
 <!-- <p id="a1" >Chi tiết sản phẩm</p> -->
-<div class="d1">Chi tiết sản phẩm</div>
+<div class="d1" style="text-align:center;">
+	<h2>Chi tiết sản phẩm</h2>
+</div>
 
-<div *ngIf="product" >
-  
- <!-- Chi tiết {{product.name}} <br>
- Giá :{{product.price}} <br>
- Mô tả : {{product.desc}} <br>
- status : {{product.status}} <br>
- img : {{product.img}} -->
- <!-- On rows -->
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="col">id</th>
-      <th scope="col">Tên sản phẩm</th>
-      <th scope="col">Giá tiền</th>
-      <th scope="col">Mô tả</th>
-      <th scope="col">Trạng thái</th>
-      <th scope="col">Hình ảnh</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">{{product.id}}</th>
-      <td>{{product.name}}</td>
-      <td>{{product.price}}</td>
-      <td>{{product.desc}}</td>
-       <td>{{product.status}}</td>
-      <td>{{product.img}}</td>
-    </tr>
-   
-  </tbody>
-</table>
+<div *ngIf="product">
+
+
+	<br>
+	<td><img src="{{product.img}}" alt="" width="160px" height="160px"></td>
+  <hr>
+		<button id="b1" type="button" class="btn btn-danger"  (click)="removeItem(product.id)">Delete</button>
+		&nbsp;
+		
+		&nbsp;
+		<button id="b3" class="btn btn-primary" routerLink = '/product/edit/{{product.id}}'>Edit</button>
+		&nbsp;
+		<table class="table">
+
+			<thead>
+				<tr>
+					<th scope="col">id</th>
+					<th scope="col">Tên sản phẩm</th>
+					<th scope="col">Giá tiền</th>
+					<th scope="col">Mô tả</th>
+					<th scope="col">Trạng thái</th>
+					<th scope="col">Hình ảnh</th>
+				</tr>
+			</thead>
+			<tbody>
+
+				<tr>
+					<th scope="row">{{product.id}}</th>
+					<td>{{product.name}}</td>
+					<td>{{product.price}}</td>
+					<td>{{product.desc}}</td>
+					<td>{{product.status}}</td>
+					<td>{{product.img}}</td>
+				</tr>
+
+
+			</tbody>
+		</table>
 
 </div>
 <!-- <p>ProductDetail </p> -->
