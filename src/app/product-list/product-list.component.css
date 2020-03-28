@@ -27,6 +27,8 @@ background-color: rgb(230, 102, 123)
 }
 #b3{
 
+width: 90px;
+background-color: rgb(223, 171, 180)
 }
 #p1{
   color: rgb(243, 189, 10)
@@ -38,10 +40,13 @@ h3{
 #c1{
   margin-bottom: 100px
 }
-#a :hover{
-  color: pink;
-}
+
 #anh{
-  background-color: rgb(255, 255, 255)
+  /* background-color: rgb(255, 255, 255) */
+   background-color: rgb(180, 156, 156)
+}
+#a{
+  text-align: center;
+  font:14px fonttitle
 }
 

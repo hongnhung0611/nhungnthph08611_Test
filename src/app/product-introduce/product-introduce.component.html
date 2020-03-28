@@ -1,3 +1,34 @@
-<p>
-product-introduce works!
-</p>
+
+<!-- <p id="td">Sản phẩm mới nhất</p> -->
+<h3 style="text-align:center; margin-top: 0px;">LATEST PRODUCTS</h3>
+<h3 style="text-align:center; margin-top: 0px; color : gray;">_____________*______________</h3><br>
+<div id="c1" class="row">
+
+	<div ngClass="col-lg-4 col-md-9 mb-9" *ngFor="let product of products">
+		<div  id="anh" class="card h-100">
+			<a href="#"><img class="card-img-top" [src]="product.img" alt=""></a>
+				<div class="card-body">
+					<h4 class="card-title">
+						<a id="a" style="color:#555555; font-size: 20px; font: 20px FontTitle" href="#">{{product.name}}</a>
+					</h4>
+					<h5 style="color:red;">${{product.price}}</h5>
+					<!-- <p class="card-text">{{product.desc}}</p>
+					<p id="p1"class="card-text">{{product.status ? 'In stock': 'Out stock'}}</p> -->
+				</div>
+				<div class="card-footer">
+
+					<!-- <button id="b1" class="btn btn-primary" routerLink = '/product/{{product.id}}'>Detail</button> -->
+					<!-- <button class="btn btn-primary" (click)="showDetail(product)">Chi tiết</button> -->					
+					<!-- <button id="b2" class="btn btn-primary" routerLink = '/product/edit/{{product.id}}'>Edit</button> -->
+          <!-- <button id="b3" class="btn btn-primary" (click)="removeItem(product.id)">Delete</button> -->
+
+					<!-- <input type="text" name="" id="" [(ngModel)]="product.name" class="form-control mt-3"> -->
+      </div>
+				</div>
+		</div>
+
+	</div>
+
+	<!-- <div *ngIf="selected">
+  <app-product-detail [data]="selected"></app-product-detail>
+</div> -->

@@ -2,13 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { Product } from '../Product';
 import { ProductService } from '../product.service';
 
-@Component({
-  selector: 'app-product-introduce',
-  templateUrl: './product-introduce.component.html',
-  styleUrls: ['./product-introduce.component.css']
-})
-export class ProductIntroduceComponent implements OnInit {
 
+@Component({
+  selector: 'app-product-fast',
+  templateUrl: './product-fast.component.html',
+  styleUrls: ['./product-fast.component.css']
+})
+export class ProductFastComponent implements OnInit {
   selected: Product;
   products: Product[];
   
@@ -48,5 +48,5 @@ export class ProductIntroduceComponent implements OnInit {
   changeName(e){
     // this.product.name = e.target.value;
   }
-
+ 
 }

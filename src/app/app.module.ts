@@ -19,6 +19,11 @@ import { AboutComponent } from './about/about.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ProductEditComponent } from './product-edit/product-edit.component';
 import { FooterComponent } from './footer/footer.component';
+import { ProductIntroduceComponent } from './product-introduce/product-introduce.component';
+import { ProductFastComponent } from './product-fast/product-fast.component';
+import { AbouttComponent } from './aboutt/aboutt.component';
+import { CategoryyComponent } from './categoryy/categoryy.component';
+
 // import { ProductNewComponent } from './product-new/product-new.component';
 
 
@@ -39,6 +44,10 @@ import { FooterComponent } from './footer/footer.component';
     NotFoundComponent,
     ProductEditComponent,
     FooterComponent,
+    ProductIntroduceComponent,
+    ProductFastComponent,
+    AbouttComponent,
+    CategoryyComponent
     // ProductNewComponent,
 
     
