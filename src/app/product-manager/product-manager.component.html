@@ -1,88 +1,176 @@
 <!-- <div class="container">
-	<div class="jumbotron">
-		<app-product-add></app-product-add>
-	</div> -->
-<!-- <header class="d-flex mb-3 pt-5 justify-content-between" >
-    <h2>Manager</h2>
-    <button class="btn btn-primary" routerLink = "/product/add">add product</button>
-  </header>
 
-<hr>
+	<div class="row">
 
-<table class="table">
-	<thead>
-		<tr>
-			<th scope="col">#</th>
-			<th scope="col">product name</th>
-			<th scope="col">price</th>
-			<th width="200" scope="col">action</th>
 
+
+		<div class="col-lg-9">
+
+			<div class="container">
+				<div class="jumbotron">
+					<app-product-add></app-product-add>
+				</div>
+
+				<hr>
+				<br>
 			
-		</tr>
-	</thead>
-	<tbody>
-		<tr *ngFor="let product of products">
-			<th scope="row">1</th>
-			<td>{{product.id}}</td>
-			<td>{{product.name}}</td>
-			<td>{{product.price}}</td>
-			
+      
+				<h3 style="text-align:center; margin-top: 0px;"> PRODUCTS MANAGER</h3><br><br>
+
+
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th scope="col">#</th>
+							<th scope="col">Image</th>
+							<th scope="col">Product Name</th>
+							<th scope="col">Description</th>
+							<th scope="col">Price Regular</th>
+
+							<th scope="col">Status</th>
+							<th scope="col">Action</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr *ngFor="let product of products">
+							<th scope="row">{{product.id}}</th>
+							<td><img src="{{product.img}}" alt="" width="160px" height="160px"></td>
+							<td> <a routerLink="/product/{{product.id}}" class="text-reset">{{product.name}}</a></td>
+							<td>{{product.desc}}</td>
+
+							<td>{{product.price}}</td>
+
+							<td>{{product.status ? 'In stock': 'Out stock'}}</td>
+							<td> <button id="b1" type="button" class="btn btn-danger"  (click)="removeItem(product.id)">Delete</button>
+								&nbsp;
+								<button id="b2" type="button" class="btn btn-success" routerLink="/product/{{product.id}}">Detail</button>
+								&nbsp;
+								<button id="b3" class="btn btn-primary" routerLink = '/product/edit/{{product.id}}'>Edit</button>
+								&nbsp;
+							</td>
+
+
+						</tr>
+					</tbody>
+				</table>
 
 
 
-			<td>
-
-				<button class="btn btn-primary" routerLink = '/product/{{product.id}}'>Chi tiết</button>
-
-				<button class="btn btn-primary" routerLink = '/product/edit/{{product.id}}'>Sửa</button>
-			</td>
-		</tr>
-	</tbody>
-</table> -->
+			</div>
 
 
+		</div>
+    
+
+
+
+
+
+
+
+		<div class="col-lg-3">
+
+
+			<ul class="list-group">
+				<figure class="snip1325"><a
+						href="#"><img src="https://scontent-xsp1-1.xx.fbcdn.net/v/t1.15752-9/91243822_518298842211215_6234947433114107904_n.png?_nc_cat=105&_nc_sid=b96e70&_nc_ohc=THYsxnZrt6wAX-YjQrG&_nc_ht=scontent-xsp1-1.xx&oh=0b0c5b0888f4b8552ecc87aafee27875&oe=5EA570AA" alt="ls-sample4"/></a>
+				</figure>
+				<figure class="snip1325"><a
+						href="#"><img src="https://scontent-sin6-2.xx.fbcdn.net/v/t1.15752-9/91174210_200219014610191_3818070663076249600_n.png?_nc_cat=110&_nc_sid=b96e70&_nc_ohc=C-aX4CJ6zi8AX-1mRyP&_nc_ht=scontent-sin6-2.xx&oh=1ee32c6cbc493418a3ad68aba66e0d8e&oe=5EA31289" alt="ls-sample7"/></a>
+				</figure>
+
+
+
+			</ul>
+
+		</div>
+
+
+
+
+
+
+
+
+
+	</div>
+</div> -->
 
 
 <div class="container">
-	<div class="jumbotron">
-		<app-product-add></app-product-add>
-	</div>
+	<div class="row">
 
-	<hr>
+		<div class="col-lg-9">
+			<div class="container">
+				<div class="jumbotron">
+					<app-product-add></app-product-add>
+				</div>
+			</div>
+		</div>
+
+      <div class="col-lg-3">
+			<ul class="list-group">
+				<figure class="snip1325"><a
+						href="#"><img src="https://scontent-xsp1-1.xx.fbcdn.net/v/t1.15752-9/91243822_518298842211215_6234947433114107904_n.png?_nc_cat=105&_nc_sid=b96e70&_nc_ohc=THYsxnZrt6wAX-YjQrG&_nc_ht=scontent-xsp1-1.xx&oh=0b0c5b0888f4b8552ecc87aafee27875&oe=5EA570AA" alt="ls-sample4"/></a>
+				</figure>
+				<figure class="snip1325"><a
+						href="#"><img src="https://scontent-sin6-2.xx.fbcdn.net/v/t1.15752-9/91174210_200219014610191_3818070663076249600_n.png?_nc_cat=110&_nc_sid=b96e70&_nc_ohc=C-aX4CJ6zi8AX-1mRyP&_nc_ht=scontent-sin6-2.xx&oh=1ee32c6cbc493418a3ad68aba66e0d8e&oe=5EA31289" alt="ls-sample7"/></a>
+				</figure>
+			</ul>
+		</div>
 
 
-	<table class="table table-striped">
-		<thead>
-			<tr>
-				<th scope="col">#</th>
-				<th scope="col">Image</th>
-				<th scope="col">Product Name</th>
-				<th scope="col">Description</th>
-				<th scope="col">Price Regular</th>
-				<!-- <th scope="col">Price Sale</th> -->
-				<th scope="col">Status</th>
-				<th scope="col">Action</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr *ngFor="let product of products">
-				<th scope="row">{{product.id}}</th>
-				<td><img src="{{product.img}}" alt="" width="160px" height="160px"></td>
-				<td> <a routerLink="/product/{{product.id}}" class="text-reset">{{product.name}}</a></td>
-				<td>{{product.desc}}</td>
-				<!-- <td>{{product.priceSale}}</td> -->
-				<td>{{product.price}}</td>
-				<!-- <td>{{product.status==true?"Hết hàng":"Còn hàng"}}</td> -->
-        <td >{{product.status ? 'In stock': 'Out stock'}}</td>
-				<td> <button id="b1" type="button" class="btn btn-danger"  (click)="removeItem(product.id)">Delete</button>
-					 &nbsp;
-					<button id="b2" type="button" class="btn btn-success" routerLink="/product/{{product.id}}">Detail</button>
-          &nbsp;
-          <button id="b3" class="btn btn-primary" routerLink = '/product/edit/{{product.id}}'>Edit</button>
-          &nbsp;
-				</td>
-				
-				
-			</tr>
-		</tbody>
-	</table>
+				<hr>
+				<br>
+  </div>
+			
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+<h3 style="text-align:center; margin-top: 0px;"> PRODUCTS MANAGER</h3><br><br>
+
+
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th scope="col">#</th>
+							<th scope="col">Image</th>
+							<th scope="col">Product Name</th>
+							<th scope="col">Description</th>
+							<th scope="col">Price Regular</th>
+
+							<th scope="col">Status</th>
+							<th scope="col">Action</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr *ngFor="let product of products">
+							<th scope="row">{{product.id}}</th>
+							<td><img src="{{product.img}}" alt="" width="160px" height="160px"></td>
+							<td> <a routerLink="/product/{{product.id}}" class="text-reset">{{product.name}}</a></td>
+							<td>{{product.desc}}</td>
+
+							<td>{{product.price}}</td>
+
+							<td>{{product.status ? 'In stock': 'Out stock'}}</td>
+							<td> <button id="b1" type="button" class="btn btn-danger"  (click)="removeItem(product.id)">Delete</button>
+								&nbsp;
+								<button id="b2" type="button" class="btn btn-success" routerLink="/product/{{product.id}}">Detail</button>
+								&nbsp;
+								<button id="b3" class="btn btn-primary" routerLink = '/product/edit/{{product.id}}'>Edit</button>
+								&nbsp;
+							</td>
+
+
+						</tr>
+					</tbody>
+				</table>
+
+
+
+
+    </div>
+  </div>
+</div>

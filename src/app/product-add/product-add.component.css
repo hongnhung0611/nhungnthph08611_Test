@@ -1,17 +1,21 @@
 
 div{
 
-  margin-top: 20px;
+  margin-top: 50px;
+  /* padding-top: 40px; */
 
 
 }
 h1{
   margin-top: 100px;
-  color: rgb(194, 84, 84)
+  color: rgb(38, 146, 189)
 }
 .form-group input{
   padding: 10px;
 }
-input :hover{
-
+input {
+width: 600px
+}
+form{
+   margin-top: 50px;
 }
