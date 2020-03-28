@@ -1,6 +1,12 @@
 h1{
-  margin-top: 200px;
+  margin-top: 20px;
 }
 p{
   margin-top: 20px;
+}
+#d1{
+   margin-top: 200px;
+}
+a{
+  font-style: bold
 }
