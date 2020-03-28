@@ -1,7 +1,7 @@
 
 <!-- <p id="td">Sản phẩm mới nhất</p> -->
-<h3 style="text-align:center; margin-top: 0px;">LATEST PRODUCTS</h3>
-<h3 style="text-align:center; margin-top: 0px; color : gray;">_____________*______________</h3><br>
+<h3 style="text-align:center;">LATEST PRODUCTS</h3>
+<h3 style="text-align:center;  color : gray;">_____________*______________</h3><br>
 <div id="c1" class="row">
 
 	<div ngClass="col-lg-4 col-md-9 mb-9" *ngFor="let product of products">
@@ -11,7 +11,7 @@
 					<h4 class="card-title">
 						<a id="a" style="color:#555555; font-size: 20px; font: 20px FontTitle" href="#">{{product.name}}</a>
 					</h4>
-					<h5 style="color:red;">${{product.price}}</h5>
+					<h5 style="color:red;">{{product.price}} vnđ</h5>
 					<!-- <p class="card-text">{{product.desc}}</p>
 					<p id="p1"class="card-text">{{product.status ? 'In stock': 'Out stock'}}</p> -->
 				</div>
