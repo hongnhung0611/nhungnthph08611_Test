@@ -36,9 +36,9 @@ a{
 .snip1325 {
   position: relative;
   overflow: hidden;
-  margin: 10px;
+  margin-top: 10px;
   min-width: 255px;
-  max-width: 315px;
+  max-width: 380px;
   height: 220px;
   width: 100%;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
