@@ -1,34 +1,46 @@
-
 <!-- <p id="td">Sản phẩm mới nhất</p> -->
 <h3 style="text-align:center;">LATEST PRODUCTS</h3>
 <h3 style="text-align:center;  color : gray;">_____________*______________</h3><br>
 <div id="c1" class="row">
+	<!-- <li class="page-item"><a href="#" class="page-link">01</a></li>
+	<li class="page-item active"><a href="#" class="page-link">02</a></li>
+	<li class="page-item"><a href="#" class="page-link">03</a></li>
+	<li class="page-item"><a href="#" class="page-link">04</a></li>
+	<li class="page-item"><a href="#" class="page-link">09</a></li>
+	<li class="page-item">
+		<a href="#" class="page-link" aria-label="Next">
+			<span aria-hidden="true">
+                                      <span class="fas fa-chevron-right"></span>
+			</span>
+		</a> -->
 
-	<div ngClass="col-lg-4 col-md-9 mb-9" *ngFor="let product of products">
-		<div  id="anh" class="card h-100">
-			<a href="#"><img class="card-img-top" [src]="product.img" alt=""></a>
-				<div class="card-body">
-					<h4 class="card-title">
-						<a id="a" style="color:#555555; font-size: 20px; font: 20px FontTitle" href="#">{{product.name}} &nbsp;&nbsp;&nbsp;<span id="sp1" class="badge badge-primary badge-pill">new</span></a>
-					</h4>
-					<h5 style="color:red;">{{product.price}} vnđ</h5>
-					<!-- <p class="card-text">{{product.desc}}</p>
+		<div ngClass="col-lg-4 col-md-9 mb-9" *ngFor="let product of products">
+			<div id="anh" class="card h-100">
+				<a href="#"><img class="card-img-top" [src]="product.img" alt=""></a>
+					<div class="card-body">
+						<h4 class="card-title">
+							<a id="a" style="color:#555555; font-size: 20px; font: 20px FontTitle"
+								href="#">{{product.name}}
+								&nbsp;&nbsp;&nbsp;<span id="sp1" class="badge badge-primary badge-pill">new</span></a>
+						</h4>
+						<h5 style="color:red;">{{product.price}} vnđ</h5>
+						<!-- <p class="card-text">{{product.desc}}</p>
 					<p id="p1"class="card-text">{{product.status ? 'In stock': 'Out stock'}}</p> -->
-				</div>
-				<div class="card-footer">
+					</div>
+					<div class="card-footer">
 
-					<!-- <button id="b1" class="btn btn-primary" routerLink = '/product/{{product.id}}'>Detail</button> -->
-					<!-- <button class="btn btn-primary" (click)="showDetail(product)">Chi tiết</button> -->					
-					<!-- <button id="b2" class="btn btn-primary" routerLink = '/product/edit/{{product.id}}'>Edit</button> -->
-          <!-- <button id="b3" class="btn btn-primary" (click)="removeItem(product.id)">Delete</button> -->
+						<!-- <button id="b1" class="btn btn-primary" routerLink = '/product/{{product.id}}'>Detail</button> -->
+						<!-- <button class="btn btn-primary" (click)="showDetail(product)">Chi tiết</button> -->
+						<!-- <button id="b2" class="btn btn-primary" routerLink = '/product/edit/{{product.id}}'>Edit</button> -->
+						<!-- <button id="b3" class="btn btn-primary" (click)="removeItem(product.id)">Delete</button> -->
 
-					<!-- <input type="text" name="" id="" [(ngModel)]="product.name" class="form-control mt-3"> -->
-      </div>
-				</div>
+						<!-- <input type="text" name="" id="" [(ngModel)]="product.name" class="form-control mt-3"> -->
+					</div>
+			</div>
 		</div>
 
-	</div>
+</div>
 
-	<!-- <div *ngIf="selected">
+<!-- <div *ngIf="selected">
   <app-product-detail [data]="selected"></app-product-detail>
 </div> -->
