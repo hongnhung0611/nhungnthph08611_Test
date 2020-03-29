@@ -63,7 +63,7 @@ body {
 
 
 body {
-    background: #ddd;
+    background: rgb(168, 118, 118);
     background: linear-gradient(#ddd, #e8e8e8);
     font-family: 'Open Sans', sans-serif;
     height: 100vh;
@@ -139,7 +139,7 @@ body {
     transform: rotateX(0) translateZ(-60px) scale(0.85);
 }
 .blog_categorie_area {
-    padding-top: 80px;
+    padding-top: 20px;
     padding-bottom: 80px; }
   
   .categories_post {
@@ -247,7 +247,7 @@ body {
   .blog_right_sidebar {
     border: 1px solid #eeeeee;
     background: #fafaff;
-    padding: 30px; }
+    padding: 20px; }
     .blog_right_sidebar .widget_title {
       font-size: 18px;
       line-height: 25px;
@@ -266,7 +266,7 @@ body {
       padding-left: 20px;
       border-radius: 45px;
       z-index: 0;
-      background: #ffba00; }
+      background: #1b9988; }
       .blog_right_sidebar .search_widget .input-group .form-control.placeholder {
         color: #fff; }
       .blog_right_sidebar .search_widget .input-group .form-control:-moz-placeholder {
@@ -377,7 +377,7 @@ body {
           outline: none;
           box-shadow: none; }
       .blog_right_sidebar .newsletter_widget .bbtns {
-        background: #ffba00;
+        background: #6b6452;
         color: #fff;
         font-size: 12px;
         line-height: 38px;
@@ -392,7 +392,7 @@ body {
       .blog_right_sidebar .tag_cloud_widget ul li a {
         display: inline-block;
         border: 1px solid #eee;
-        background: #fff;
+        background: rgb(92, 54, 54);
         padding: 0px 13px;
         margin-bottom: 8px;
         transition: all 0.3s ease 0s;
