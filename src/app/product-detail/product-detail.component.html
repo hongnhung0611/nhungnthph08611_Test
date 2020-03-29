@@ -4,50 +4,7 @@
   <hr>
 </div>
 
-<!-- <div *ngIf="product">
 
-
-	<br>
-	<td><img src="{{product.img}}" alt="" width="160px" height="160px"></td>
-		<hr>
-
-
-		&nbsp;
-		<button id="b3" class="btn btn-primary" routerLink = '/product/edit/{{product.id}}'>Edit</button>
-		&nbsp;
-		<button id="b1" type="button" class="btn btn-danger"  (click)="removeItem(product.id)">Delete</button>
-		&nbsp;
-
-
-
-		<table class="table">
-
-			<thead>
-				<tr>
-					<th scope="col">id</th>
-					<th scope="col">Tên sản phẩm</th>
-					<th scope="col">Giá tiền</th>
-					<th scope="col">Mô tả</th>
-					<th scope="col">Trạng thái</th>
-					<th scope="col">Hình ảnh</th>
-				</tr>
-			</thead>
-			<tbody>
-
-				<tr>
-					<th scope="row">{{product.id}}</th>
-					<td>{{product.name}}</td>
-					<td>{{product.price}}</td>
-					<td>{{product.desc}}</td>
-					<td>{{product.status}}</td>
-					<td>{{product.img}}</td>
-				</tr>
-
-
-			</tbody>
-		</table>
-
-</div> -->
 
 
 <div class="container">
@@ -57,6 +14,7 @@
 		<div class="col-lg-3">
 
 			<br>
+      <a id="a" style="color:#555555; font-size: 26px;" href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{product.name}}</a>
 			<td><img src="{{product.img}}" alt="" width="160px" height="160px"></td>
 				<hr>
 
