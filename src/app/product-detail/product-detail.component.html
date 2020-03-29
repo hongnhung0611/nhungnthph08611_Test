@@ -1,21 +1,25 @@
-<!-- <p id="a1" >Chi tiết sản phẩm</p> -->
 <div class="d1" style="text-align:center;">
+  
 	<h2>Chi tiết sản phẩm</h2>
+  <hr>
 </div>
 
-<div *ngIf="product">
+<!-- <div *ngIf="product">
 
 
 	<br>
 	<td><img src="{{product.img}}" alt="" width="160px" height="160px"></td>
-  <hr>
-		
-		
+		<hr>
+
+
 		&nbsp;
 		<button id="b3" class="btn btn-primary" routerLink = '/product/edit/{{product.id}}'>Edit</button>
 		&nbsp;
-    <button id="b1" type="button" class="btn btn-danger"  (click)="removeItem(product.id)">Delete</button>
+		<button id="b1" type="button" class="btn btn-danger"  (click)="removeItem(product.id)">Delete</button>
 		&nbsp;
+
+
+
 		<table class="table">
 
 			<thead>
@@ -43,5 +47,64 @@
 			</tbody>
 		</table>
 
+</div> -->
+
+
+<div class="container">
+
+	<div class="row">
+
+		<div class="col-lg-3">
+
+			<br>
+			<td><img src="{{product.img}}" alt="" width="160px" height="160px"></td>
+				<hr>
+
+
+				&nbsp;
+				<button id="b3" class="btn btn-primary" routerLink = '/product/edit/{{product.id}}'>Edit</button>
+				&nbsp;
+				<button id="b1" type="button" class="btn btn-danger"  (click)="removeItem(product.id)">Delete</button>
+				&nbsp;
+		</div>
+
+
+		<div class="col-lg-9">
+			<!-- <router-outlet></router-outlet> -->
+
+			<table class="table">
+
+				<thead>
+					<tr>
+						<th scope="col">id</th>
+						<th scope="col">Tên sản phẩm</th>
+						<th scope="col">Giá tiền</th>
+						<th scope="col">Mô tả</th>
+						<th scope="col">Trạng thái</th>
+						<th scope="col">Hình ảnh</th>
+					</tr>
+				</thead>
+				<tbody>
+
+					<tr>
+						<th scope="row">{{product.id}}</th>
+						<td>{{product.name}}</td>
+						<td>{{product.price}}</td>
+						<td>{{product.desc}}</td>
+						<td>{{product.status}}</td>
+						<td>{{product.img}}</td>
+					</tr>
+
+
+				</tbody>
+			</table>
+
+
+		</div>
+    <hr>
+
+
+	</div>
+
+
 </div>
-<!-- <p>ProductDetail </p> -->
