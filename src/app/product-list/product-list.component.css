@@ -132,6 +132,34 @@ body {
     box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
     transform: rotateX(0) translateZ(-60px) scale(0.85);
 }
+.page-link {
+    background: transparent;
+    font-weight: 400; }
+  
+  .blog-pagination .page-item.active .page-link {
+    color: #fff; }
+  
+  .blog-pagination .page-link {
+    position: relative;
+    display: block;
+    padding: 0.5rem 0.75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #8a8a8a;
+    border: none; }
+  
+  .blog-pagination .page-link .lnr {
+    font-weight: 600; }
+  
+  .blog-pagination .page-item:last-child .page-link,
+  .blog-pagination .page-item:first-child .page-link {
+    border-radius: 0; }
+  
+  .blog-pagination .page-link:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #c5322d;
+    border-color: #eee; }
 
 
 
