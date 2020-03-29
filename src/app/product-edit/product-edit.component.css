@@ -2,5 +2,14 @@ p{
   margin-top: 150px;
 }
 h1{
-  color: royalblue
+  color: royalblue;
+  text-align: center
+}
+#a{
+  margin-top: 200px;
+}
+img{
+  height: 360px;
+  width: 300px;
+  margin: 30px
 }
