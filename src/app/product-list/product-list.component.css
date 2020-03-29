@@ -5,9 +5,7 @@ div {
   
   
 }
-div{
-  /* margin-bottom: 15px */
-}
+
 #sp1{
   background-color: rgb(233, 61, 61);
 }
@@ -69,7 +67,7 @@ body {
 .thumb {
     width: 400px;
     height: 300px;
-    margin: 70px auto;
+    margin: 0px auto;
     perspective: 1000px;
 }
 

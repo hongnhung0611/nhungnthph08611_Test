@@ -16,6 +16,9 @@ span{
     opacity: 0.3;
 
 }
+#s1{
+  background-color: gray;
+}
 h2{
   color: rgb(221, 90, 112)
 }
@@ -23,7 +26,12 @@ h2{
 background-image: none
 }
 #ul1{
-   opacity: 0.8;
+   opacity: 0.98;
+}
+a{
+  padding: 15px 0 0 20px;
+  color: rgb(54, 52, 52);
+
 }
 .snip1325 {
   position: relative;
