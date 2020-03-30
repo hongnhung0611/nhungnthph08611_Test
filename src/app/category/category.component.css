@@ -243,11 +243,12 @@ body {
     font-weight: 500;
     padding: 0px 30px;
     background: #fff; }
-  
+  /* mmmm */
   .blog_right_sidebar {
     border: 1px solid #eeeeee;
-    background: #fafaff;
-    padding: 20px; }
+    background: #f7c8d1;
+    padding: 20px;
+    margin-top: 110px; }
     .blog_right_sidebar .widget_title {
       font-size: 18px;
       line-height: 25px;
