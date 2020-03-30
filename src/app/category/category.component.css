@@ -16,6 +16,12 @@ span{
     opacity: 0.3;
 
 }
+#img2{
+  height: 300px;
+}
+#img1{
+  width: 300px;
+}
 #s1{
   background-color: gray;
 }
