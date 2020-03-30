@@ -5,11 +5,13 @@ width: 70px;
 #b2 {
 height: 40px;
 width: 70px;
+background-color: rgb(74, 172, 90);
 
 }
 #b3 {
 height: 40px;
 width: 70px;
+/* background-color: rgb(228, 241, 111); */
 }
 table{
   background-color: lightcyan;

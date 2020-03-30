@@ -170,7 +170,7 @@
 							<td>{{product.price}}</td>
 
 							<!-- <td>{{product.status ? 'In stock': 'Out stock'}}</td> -->
-              <td>{{product.status ? 'Instock' : 'Outstock'}}</td>
+              <td>{{product.status==true ? 'Instock' : 'Outstock'}}</td>
 							<td> <button id="b1" type="button" class="btn btn-danger"  (click)="removeItem(product.id)">Delete</button>
 								&nbsp;
 								<button id="b2" type="button" class="btn btn-success" routerLink="/product/{{product.id}}">Detail</button>
