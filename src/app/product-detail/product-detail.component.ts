@@ -37,7 +37,9 @@ export class ProductDetailComponent implements OnInit {
     // this.products = this.products.filter(product => product.id != id)
     this.productService.removeProduct(id).subscribe(response => {
       console.log(response);
-      this.products = this.products.filter(product => product.id != response.id)
+      this.products = this.products.filter(product => product.id != response.id);
+      // prompt("xoóa thành công")
+
     })
 
   }
