@@ -9,6 +9,7 @@ import { ActivatedRoute } from "@angular/router";
 })
 export class ProductDetailComponent implements OnInit {
   //  @Input('data') product: Product;
+  products: Product[];
   product: Product;
   constructor(
     private productService: ProductService,
@@ -30,5 +31,14 @@ export class ProductDetailComponent implements OnInit {
         this.product = data;
       });
     });
+  }
+
+  removeItem(id){
+    // this.products = this.products.filter(product => product.id != id)
+    this.productService.removeProduct(id).subscribe(response => {
+      console.log(response);
+      this.products = this.products.filter(product => product.id != response.id)
+    })
+
   }
 }
