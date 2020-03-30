@@ -31,6 +31,7 @@ export class ProductListComponent implements OnInit {
     })
     // this.products = this.productService.getProducts();
   }
+  
   removeItem(id){
     // this.products = this.products.filter(product => product.id != id)
     this.productService.removeProduct(id).subscribe(response => {

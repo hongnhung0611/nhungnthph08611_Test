@@ -6,12 +6,12 @@
 <div id="c1" class="row">
 
 
-	<div id="anhh" ngClass="col-lg-4 col-md-8 mb-7" *ngFor="let product of products">
+	<div id="anhh" ngClass="col-lg-4 col-md-8 mb-7" *ngFor="let product of products" routerLink = "/product/{{product.id}}">
 		<div id="anh" class="card h-100">
-			<a href="#"><img class="card-img-top" [src]="product.img" alt=""></a>
+			<a routerLink = "/product/{{product.id}}" href="#"><img class="card-img-top" [src]="product.img" alt=""></a>
 				<div class="card-body">
 					<h4 class="card-title">
-						<a id="a" style="color:#555555; font-size: 16px; font: 16px " href="#">{{product.name}}
+						<a routerLink = "/product/{{product.id}}" id="a" style="color:#555555; font-size: 16px; font: 16px " href="#">{{product.name}}
 							&nbsp;&nbsp;&nbsp;<span id="sp1" class="badge badge-primary badge-pill">new</span></a>
 					</h4>
 					<h5 style="color:red;">{{product.price}} vnđ</h5>
