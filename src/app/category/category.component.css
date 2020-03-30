@@ -16,6 +16,12 @@ span{
     opacity: 0.3;
 
 }
+#as h4{
+  background-color: rgb(104, 97, 202);
+}
+#as1 h4{
+  background-color: rgb(226, 113, 113);
+}
 #img2{
   height: 300px;
 }
