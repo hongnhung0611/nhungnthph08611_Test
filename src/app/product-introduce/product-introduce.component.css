@@ -7,6 +7,20 @@ h3{
   color: rgb(238, 168, 191);
   
 }
+#anh :hover{
+  /* color: red; */
+  background-color: rgb(211, 137, 137);
+  border-block-end-color: red;
+}
+#anhh :hover{
+  /* color: red; */
+  background-color: rgb(211, 137, 137);
+  border-block-end-color: rgb(83, 49, 206);
+ 
+}
+#a :hover{
+  color : red;
+}
 
 
 
