@@ -48,7 +48,7 @@ h3{
 }
 #a{
   text-align: center;
-  font:14px fonttitle
+  /* font:14px fonttitle */
 }
 img :hover{
     opacity: 0.5;
