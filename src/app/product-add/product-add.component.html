@@ -1,6 +1,6 @@
 <!-- <app-categoryy></app-categoryy> -->
 <h1>Thêm mới sản phẩm</h1>
-<form class="">
+<!-- <form class="">
 
   <div class="form-group">
     <label for=""> Tên sản phẩm</label>
@@ -15,8 +15,70 @@
     <input type="text" name="img" class="form-control"placeholder="Url" [(ngModel)]="product.img">
   </div>
   <button type="submit" class="btn btn-primary" (click)="addProduct()">Thêm sản phẩm</button>
-  <!-- <button type="submit" class="btn btn-primary" routerLink = '/product/add'>Thêm sản phẩm</button> -->
+ 
+
+</form> -->
+<!-- <form #formAdd="ngForm" (submit)="onSubmit(formAdd)"> -->
+<form>
+
+	<div class="form-group">
+		<label for="">Product Name</label>
+		<input type="text" name="name" [(ngModel)]="product.name" class="form-control" placeholder="Product Name"
+                        minlength="3" required #productName="ngModel" />
+		<div class="alert alert-danger" *ngIf="productName.dirty && productName.errors?.required">
+			Product Name phải có dữ liệu !!!
+		</div>
+		<div class="alert alert-danger" *ngIf="productName.dirty && productName.errors?.minlength">
+			Ít nhất 3 ký trở lên !!!
+		</div>
+	</div>
+
+	<div class="form-group">
+		<label for="">Product Description</label>
+		<input type="text" name="description" [(ngModel)]="product.desc" class="form-control" placeholder="Product Description"
+                      minlength="10" required #productDesc="ngModel" />
+		<div class="alert alert-danger" *ngIf="productDesc.dirty && productDesc.errors?.required">
+			Product Description phải có dữ liệu !!!
+		</div>
+		<div class="alert alert-danger" *ngIf="productDesc.dirty && productDesc.errors?.minlength">
+			Ít nhất 10 ký trở lên !!!
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="">Img</label>
+		<input type="text" name="img" [(ngModel)]="product.img" class="form-control" placeholder="Url"
+                      minlength="10" required #productDesc="ngModel" />
+		<div class="alert alert-danger" *ngIf="productDesc.dirty && productDesc.errors?.required">
+			img phải có dữ liệu !!!
+		</div>
+		<div class="alert alert-danger" *ngIf="productImg.dirty && productImg.errors?.minlength">
+			Ít nhất 10 ký trở lên !!!
+		</div>
+	</div>
+
+	<!-- <div class="form-group">
+                  <label for="exampleInputPassword1">Price Sale</label>
+                  <input type="number" class="form-control" id="exampleInputPassword1" placeholder="Price Sale"
+                        [(ngModel)]="product.priceSale" name="priceSale" class="form-control" required #productPriceSale="ngModel">
+                  <label *ngIf="productPriceSale.dirty && productPriceSale.errors?.required">Price Sale phải có dữ liệu !!!</label>
+            </div> -->
+
+	<div class="form-group">
+		<label for="">Price Regular</label>
+		<input type="number" name="price" [(ngModel)]="product.price"
+                      class="form-control" placeholder="Product Price " required #price="ngModel"/>
+		<div class="alert alert-danger" *ngIf="price.dirty && price.errors?.required">
+			Price Regular phải có dữ liệu !!!
+		</div>
+	</div>
+
+	<div class="form-group">
+		<label for=""> Trạng thái</label>
+		<input type="text" name="status" class="form-control"placeholder="(true/false)" [(ngModel)]="product.status">
+
+            </div>
+		<br>
+		<!-- <button type="submit" class="btn btn-primary" style="width: 200px;" [disabled]='formAdd.invalid'>Add new product</button> -->
+		<button type="submit" class="btn btn-primary" (click)="addProduct()">Thêm sản phẩm</button>
 
 </form>
-
-
