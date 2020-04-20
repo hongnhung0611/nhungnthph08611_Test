@@ -11,6 +11,7 @@ import { ProductManagerComponent } from "./product-manager/product-manager.compo
 import { ProductDetailComponent } from "./product-detail/product-detail.component";
 import { ProductEditComponent } from "./product-edit/product-edit.component";
 import { BlogComponent } from "./blog/blog.component";
+import { AdminComponent } from "./admin/admin.component";
 
 const routes: Routes = [
   { path: "", redirectTo: "/home", pathMatch: "full" },
@@ -26,8 +27,17 @@ const routes: Routes = [
   { path: 'product/edit/:productId' , component: ProductEditComponent},
   { path: 'product/add' , component: ProductAddComponent},
 { path: 'blog' , component: BlogComponent},
+ { path: 'admin', component: AdminComponent, 
+      children: [
+        { path: '', redirectTo: 'dashboard', pathMatch: 'full'},
+        // { path: 'dashboard', component: DashboardComponent},
+        // { path: 'manager', component: ManagerComponent},
+        { path: 'add-product', component: ProductAddComponent},
+      ]
+    },
 
-  { path: "**", component: NotFoundComponent }
+  { path: "**", component: NotFoundComponent },
+  
 ];
 
 @NgModule({

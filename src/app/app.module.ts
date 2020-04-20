@@ -25,6 +25,8 @@ import { AbouttComponent } from './aboutt/aboutt.component';
 import { CategoryyComponent } from './categoryy/categoryy.component';
 import { DanhsachComponent } from './danhsach/danhsach.component';
 import { BlogComponent } from './blog/blog.component';
+import { AdminComponent } from './admin/admin.component';
+import { HeaderComponent } from './header/header.component';
 
 // import { ProductNewComponent } from './product-new/product-new.component';
 
@@ -51,7 +53,9 @@ import { BlogComponent } from './blog/blog.component';
     AbouttComponent,
     CategoryyComponent,
     DanhsachComponent,
-    BlogComponent
+    BlogComponent,
+    AdminComponent,
+    HeaderComponent
     // ProductNewComponent,
 
     
