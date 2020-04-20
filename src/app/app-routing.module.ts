@@ -35,6 +35,7 @@ const routes: Routes = [
         { path: "manager", component: ProductManagerComponent},
         { path: 'product-add', component: ProductAddComponent},
         { path: 'product/:productId', component: ProductDetailComponent},
+         { path: 'product-list', component: ProductListComponent},
       ]
     },
 
