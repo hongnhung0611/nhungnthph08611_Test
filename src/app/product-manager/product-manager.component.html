@@ -96,7 +96,7 @@
 	</div>
 </div> -->
 
-<app-header></app-header>
+<!-- <app-header></app-header> -->
 <div class="container">
 	<div class="row">
 
@@ -110,12 +110,7 @@
 
 		<div class="col-lg-5">
 			<ul class="list-group">
-        <!-- <div class="thumb">
-				<a href="#">
-					<span>the optimist lives on</span>
-				</a>
-        <br><br><br><br><br><br>
-			</div> -->
+ 
 				<figure class="snip1325"><a
 						href="#"><img id="img1" src="https://scontent-xsp1-1.xx.fbcdn.net/v/t1.15752-9/91243822_518298842211215_6234947433114107904_n.png?_nc_cat=105&_nc_sid=b96e70&_nc_ohc=THYsxnZrt6wAX-YjQrG&_nc_ht=scontent-xsp1-1.xx&oh=0b0c5b0888f4b8552ecc87aafee27875&oe=5EA570AA" alt="ls-sample4"/></a>
 				</figure>
@@ -169,7 +164,7 @@
 
 							<td>{{product.price}}</td>
 
-							<!-- <td>{{product.status ? 'In stock': 'Out stock'}}</td> -->
+						
               <td>{{product.status==true ? 'Instock' : 'Outstock'}}</td>
 							<td> <button id="b1" type="button" class="btn btn-danger"  (click)="removeItem(product.id)">Delete</button>
 								&nbsp;
