@@ -27,6 +27,7 @@ import { DanhsachComponent } from './danhsach/danhsach.component';
 import { BlogComponent } from './blog/blog.component';
 import { AdminComponent } from './admin/admin.component';
 import { HeaderComponent } from './header/header.component';
+import { AdminManagerComponent } from './admin-manager/admin-manager.component';
 
 // import { ProductNewComponent } from './product-new/product-new.component';
 
@@ -55,7 +56,8 @@ import { HeaderComponent } from './header/header.component';
     DanhsachComponent,
     BlogComponent,
     AdminComponent,
-    HeaderComponent
+    HeaderComponent,
+    AdminManagerComponent
     // ProductNewComponent,
 
     
