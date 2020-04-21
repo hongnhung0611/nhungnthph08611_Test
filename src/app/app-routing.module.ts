@@ -19,28 +19,31 @@ const routes: Routes = [
   { path: "home", component: HomeComponent },
   { path: "add-product", component: ProductAddComponent },
   { path: "about", component: AboutComponent },
-   { path: "aboutt", component: AbouttComponent },
+  { path: "aboutt", component: AbouttComponent },
   { path: "product", component: ProductListComponent },
-  
+
   { path: "contact", component: ContactComponent },
   { path: "manager", component: ProductManagerComponent },
   { path: "product/:productId", component: ProductDetailComponent },
-  { path: 'product/edit/:productId' , component: ProductEditComponent},
-  { path: 'product/add' , component: ProductAddComponent},
-{ path: 'blog' , component: BlogComponent},
- { path: 'admin', component: AdminComponent, 
-      children: [
-        { path: '', redirectTo: 'dashboard', pathMatch: 'full'},
-        { path: 'dashboard', component: DashboardComponent},
-        { path: "manager", component: ProductManagerComponent},
-        { path: 'product-add', component: ProductAddComponent},
-        { path: 'product/:productId', component: ProductDetailComponent},
-         { path: 'product-list', component: ProductListComponent},
-      ]
-    },
+  { path: "product/edit/:productId", component: ProductEditComponent },
+  { path: "product/add", component: ProductAddComponent },
+  { path: "blog", component: BlogComponent },
+  {
+    path: "admin",
+    component: AdminComponent,
+    children: [
+      { path: "", redirectTo: "dashboard", pathMatch: "full" },
+      { path: "dashboard", component: DashboardComponent },
+      { path: "manager", component: ProductManagerComponent },
+      { path: "product-add", component: ProductAddComponent },
+      { path: "product/:productId", component: ProductDetailComponent },
+      { path: "product/edit/:productId", component: ProductEditComponent },
+      { path: "product-list", component: ProductListComponent },
+      { path: "home", component: HomeComponent }
+    ]
+  },
 
-  { path: "**", component: NotFoundComponent },
-  
+  { path: "**", component: NotFoundComponent }
 ];
 
 @NgModule({

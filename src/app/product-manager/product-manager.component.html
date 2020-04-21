@@ -168,9 +168,9 @@
               <td>{{product.status==true ? 'Instock' : 'Outstock'}}</td>
 							<td> <button id="b1" type="button" class="btn btn-danger"  (click)="removeItem(product.id)">Delete</button>
 								&nbsp;
-								<button id="b2" type="button" class="btn btn-success" routerLink="/product/{{product.id}}">Detail</button>
+								<button id="b2" type="button" class="btn btn-success" routerLink="/admin/product/{{product.id}}">Detail</button>
 								&nbsp;
-								<button id="b3" class="btn btn-primary" routerLink = '/product/edit/{{product.id}}'>Edit</button>
+								<button id="b3" class="btn btn-primary" routerLink = '/admin/product/edit/{{product.id}}'>Edit</button>
 								&nbsp;
 							</td>
 
