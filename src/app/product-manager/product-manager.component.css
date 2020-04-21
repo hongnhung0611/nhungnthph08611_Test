@@ -1,6 +1,4 @@
-#img1{
-  /* height: 200px; */
-}
+
 #b1 {
 height: 40px;
 width: 70px;
@@ -44,6 +42,7 @@ h3{
   -webkit-transition: all 2s ease-out;
   transition: all 2s ease-out;
   
+  
 }
 .snip1325:hover img,
 .snip1325.hover img {
@@ -55,7 +54,7 @@ body {
   background-color: #212121;
 }
 ul{
-  padding-top: 120px;
+  padding-top: 0px;
 }
 
 
