@@ -7,9 +7,9 @@
 <div id="c1" class="row">
 
 
-	<div id="anhh" ngClass="col-lg-4 col-md-8 mb-7" *ngFor="let product of products" routerLink = "/product/{{product.id}}">
+	<div id="anhh" ngClass="col-lg-4 col-md-8 mb-7" *ngFor="let product of products" routerLink = "">
 		<div id="anh" class="card h-100">
-			<a routerLink = "/product/{{product.id}}" href="#"><img class="card-img-top" [src]="product.img" alt=""></a>
+			<a routerLink = "" href="#"><img class="card-img-top" [src]="product.img" alt=""></a>
 				<div class="card-body">
 					<h4 class="card-title">
 						<a routerLink = "/product/{{product.id}}" id="a" style="color:#555555; font-size: 16px; font: 16px " href="#">{{product.name}}
